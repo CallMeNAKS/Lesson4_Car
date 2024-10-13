@@ -17,10 +17,21 @@ namespace CodeBase.Managers
 
         [SerializeField] private Transform _playerTransform;
 
-        [SerializeField] private float _minDistance;
-        [SerializeField] private float _maxDistance;
+        [SerializeField] private float _minDistance = 5f;
+        [SerializeField] private float _maxDistance = 15f;
+
+        [SerializeField] private int _enemiesToSpawn = 5;
+
+        [SerializeField] private RedEnemy _redEnemyPrefab;
+        
+        private RedEnemyFactory _redEnemyFactory;
 
         private bool _isInPlayMode;
+
+        private void Awake()
+        {
+            _redEnemyFactory = new RedEnemyFactory(_redEnemyPrefab, 10);
+        }
 
         private void Update()
         {
@@ -55,9 +66,12 @@ namespace CodeBase.Managers
 
         private void SpawnRedEnemy()
         {
-            Vector3 enemyPosition = GetRandomPositionAroundPlayer();
-            AbstractEnemyFactory factory = new RedEnemyFactory("RedEnemy/RedEnemy1");
-            AbstractEnemy redEnemy = factory.CreateEnemy(enemyPosition);
+            for (int i = 0; i < _enemiesToSpawn; i++)
+            {
+                Vector3 spawnPosition = GetRandomPositionAroundPlayer();
+                AbstractEnemy redEnemy = _redEnemyFactory.CreateEnemy(spawnPosition);
+                redEnemy.Attack();
+            }
         }
 
         private Vector3 GetRandomPositionAroundPlayer()

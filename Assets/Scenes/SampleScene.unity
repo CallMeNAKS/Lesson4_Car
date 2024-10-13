@@ -1375,6 +1375,8 @@ MonoBehaviour:
   _playerTransform: {fileID: 283919314}
   _minDistance: 10
   _maxDistance: 15
+  _enemiesToSpawn: 5
+  _redEnemyPrefab: {fileID: -5562696021624480230, guid: 05e826556e9fda544afc7a5c4c7b44b6, type: 3}
 --- !u!4 &953894554
 Transform:
   m_ObjectHideFlags: 0

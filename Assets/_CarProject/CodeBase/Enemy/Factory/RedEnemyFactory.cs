@@ -4,13 +4,13 @@ namespace CodeBase.Enemy.Factory
 {
     public class RedEnemyFactory : AbstractEnemyFactory
     {
-        public RedEnemyFactory(string prefabPath) : base(prefabPath) { }
+        public RedEnemyFactory(AbstractEnemy prefab, int initialCapacity) : base(prefab, initialCapacity) { }
 
         public override AbstractEnemy CreateEnemy(Vector3 position)
         {
-            GameObject prefab = Resources.Load<GameObject>(_prefabPath);
-            GameObject redEnemyObject = Instantiate(prefab, position, default);
-            return redEnemyObject.GetComponent<RedEnemy>();
+            AbstractEnemy redEnemy = _pool.GetFromPool();
+            redEnemy.transform.position = position;
+            return redEnemy;
         }
     }
 }
