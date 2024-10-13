@@ -30,7 +30,7 @@ namespace CodeBase.Managers
 
         private void Awake()
         {
-            _redEnemyFactory = new RedEnemyFactory(_redEnemyPrefab, 10);
+            _redEnemyFactory = new RedEnemyFactory(_redEnemyPrefab, 15);
         }
 
         private void Update()
@@ -70,7 +70,7 @@ namespace CodeBase.Managers
             {
                 Vector3 spawnPosition = GetRandomPositionAroundPlayer();
                 AbstractEnemy redEnemy = _redEnemyFactory.CreateEnemy(spawnPosition);
-                redEnemy.Attack();
+                redEnemy.Move();
             }
         }
 

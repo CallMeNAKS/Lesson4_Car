@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace CodeBase.SpawnSystem
 {
-    public class SpawnManager : Singleton<SpawnManager>
+    public class EnemySpawnManager : Singleton<EnemySpawnManager>
     {
 
     }

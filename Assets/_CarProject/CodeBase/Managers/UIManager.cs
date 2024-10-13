@@ -38,7 +38,7 @@ namespace CodeBase.Managers
 
         private void OnCursorEvent(Button button, bool isEntering)
         {
-            Debug.Log($"{(isEntering ? "Entered" : "Exited")} button: {button.name}");
+            //Debug.Log($"{(isEntering ? "Entered" : "Exited")} button: {button.name}");
 
             int index = Array.IndexOf(_buttons, button);
             if (index >= 0 && index < _lights.Length)

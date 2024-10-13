@@ -146,8 +146,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44238093}
-  m_LocalRotation: {x: 0.38129297, y: -0.0000031240959, z: 0.0000012885394, w: 0.92445433}
-  m_LocalPosition: {x: -2.285832, y: 8.23632, z: -0.09241915}
+  m_LocalRotation: {x: 0.53257346, y: -0.00000004765537, z: 0.000000029986378, w: 0.8463838}
+  m_LocalPosition: {x: -2.285832, y: 28.26632, z: -7.092419}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1375,7 +1375,7 @@ MonoBehaviour:
   _playerTransform: {fileID: 283919314}
   _minDistance: 10
   _maxDistance: 15
-  _enemiesToSpawn: 5
+  _enemiesToSpawn: 10
   _redEnemyPrefab: {fileID: -5562696021624480230, guid: 05e826556e9fda544afc7a5c4c7b44b6, type: 3}
 --- !u!4 &953894554
 Transform:
@@ -2058,7 +2058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 4.97, z: -5}
+  m_FollowOffset: {x: 0, y: 25, z: -12}
   m_XDamping: 2
   m_YDamping: 2
   m_ZDamping: 2

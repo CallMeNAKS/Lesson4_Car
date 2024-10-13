@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd57003f58bd8854c9b2a13f2e03e607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxSteer: 20
+  _maxSteer: 25
   _steerWheels:
   - {fileID: 8321831986513224584}
   - {fileID: 2145181279734748472}
