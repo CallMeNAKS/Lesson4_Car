@@ -1372,6 +1372,9 @@ MonoBehaviour:
   _playTerrain: {fileID: 982787991}
   _roomCamera: {fileID: 1634557889}
   _playModeCamera: {fileID: 44238093}
+  _playerTransform: {fileID: 283919314}
+  _minDistance: 10
+  _maxDistance: 15
 --- !u!4 &953894554
 Transform:
   m_ObjectHideFlags: 0
@@ -1890,7 +1893,6 @@ MonoBehaviour:
   - {fileID: 2053119669}
   - {fileID: 2065221171}
   - {fileID: 2078736119}
-  _gameManager: {fileID: 953894553}
 --- !u!1 &1493657181 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 592198646822442225, guid: edfa33748537cb342917ddaacebfd40e, type: 3}
